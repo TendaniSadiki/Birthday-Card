@@ -7,8 +7,11 @@ const App = () => (
   <View style={styles.container}>
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
       <Text style={styles.text}>Happy Birthday</Text>
-      <Text style={styles.HappyBirthdayText}>A birthday is a time for fun and celebration.
-         May your celebration be great, and may the fun you have today follow you through the coming year.</Text>
+      <View style={styles.HappyBirthdayContent}>
+        <Text style={styles.HappyBirthdayText}>A birthday is a time for fun and celebration.
+         May your celebration be great, and may the fun you have today follow you through the coming year.
+        </Text>
+      </View>
     </ImageBackground>
   </View>
 );
@@ -27,19 +30,32 @@ const styles = StyleSheet.create({
     lineHeight: 84,
     fontWeight: "bold",
     textAlign: "center",
-    backgroundColor: "#000000c0",
-    marginTop:-584
-    
-    
+    backgroundColor: "rgba(255, 0, 0, 0.6);",
+    marginTop:0
   },
-  HappyBirthdayText:{
+  HappyBirthdayContent:{
     color: "white",
     fontSize: 10,
     bottom:100,
     textAlign: "center",
-    backgroundColor: "#000000c0",   
-    
-    
+    backgroundColor: "hsla(0, 100%, 50%, 0.3)",  
+    marginTop:220,
+    fontSize: 30,
+    height:350,
+  },
+  HappyBirthdayText:{
+    color: "white",
+    fontSize: 24,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginTop:100,
+    fontFamily: 'lucida grande'
+   
+  
+  },
+  birthContainer:{
+    backgroundColor:"blue",
+    borderRadius:15
   }
 
 });
