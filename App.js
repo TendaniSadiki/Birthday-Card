@@ -2,7 +2,6 @@ import React from "react";
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 
 const image = { uri: "https://cdn.pixabay.com/photo/2015/10/16/19/18/balloon-991680_960_720.jpg" };
-
 const App = () => (
   <View style={styles.container}>
     <ImageBackground source={image} resizeMode="cover" style={styles.image}>
@@ -50,14 +49,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop:100,
     fontFamily: 'lucida grande'
-   
-  
   },
   birthContainer:{
     backgroundColor:"blue",
     borderRadius:15
   }
-
 });
 
 export default App;
